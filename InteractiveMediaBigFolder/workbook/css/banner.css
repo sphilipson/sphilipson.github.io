@@ -1,0 +1,22 @@
+.homepage-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 41px;
+  
+    }
+  
+  .homepage-banner img { 
+    max-width: 100%;
+    height: auto;
+    }
+  
+  
+  .homepage-image{
+    width: 55vw;
+    height: 40vw;
+    overflow:hidden;
+    margin-top: 5rem;
+  }

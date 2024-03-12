@@ -1,0 +1,87 @@
+/*CSS for buttons*/
+
+.btn{ /*buttons that are just text*/
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #363232;
+    text-decoration: none;
+}
+
+.icon-btn{ /*buttons that are images/icons*/
+    height: 20px; 
+    max-width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+.prev-page-btn{ /* back arrow button group including text */
+    padding-left: 3rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    position: relative;
+    padding-bottom: 3%;
+   
+  }
+  
+  .button-main{
+    display: inline-block;
+    padding: 1% 10%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: #434242;
+    margin: 2% 2%;
+    cursor: pointer;
+  }
+  
+  .button-main:hover{
+    border-color: black;
+    color: #434242;
+    background-color: #e8e3e3;
+  }
+
+.button-secondary{
+  border-style:solid;
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 2px;
+  padding: 1rem 3rem;
+  max-height: 3rem;
+  color:#434242;
+  white-space: nowrap;
+}
+
+
+
+.return-btn{
+padding-top: 100px;
+text-decoration: none;
+}
+
+
+.button-secondary:hover{
+  border-color: black;
+  color: #434242;
+  background-color: #e8e3e3;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .prev-page-btn{
+    padding-left: 1rem;
+  }
+}

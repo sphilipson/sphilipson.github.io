@@ -1,0 +1,53 @@
+
+    /*product list begins, flex-wrap makes any items move to the next row when the viewport size is changed/too small
+    keeps the product list responsive*/
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    
+      .product-list-products { /*25% makes the product take up 
+        25% of the space in the container, subtracting 2% from the 100%, % keeps the products responsive*/
+        width: calc(25% - 2%);
+        margin-bottom: 2%;
+      }
+    
+      .product-list-item {
+        display: flex;
+        flex-direction: column;
+      }
+    
+    .product-list-image {
+      position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    
+    }
+    
+    .product-list-image img { /*object-fit: contain scales the content 
+      to fit proportionally within the container.*/
+      max-width: 100%;
+      max-height: auto;
+      object-fit: contain;
+    }
+    
+    /*@media makes pages responsive, when the screen size is below 920px,
+    there will be three products per row, and wehn below 600px there will be 2 per row (for mobile)*/
+    @media (max-width: 920px){
+      .product-list-products{
+        width: calc(33.33% - 2%);
+      }
+    }
+    
+    @media (max-width: 600px){
+      .product-list-products {
+        width: calc(50% - 2%);
+      }
+    }
+     
+      

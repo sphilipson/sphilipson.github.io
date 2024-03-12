@@ -1,0 +1,41 @@
+/* Nested Flexboxes */
+.big-container {
+    padding-top: 41px;
+}
+
+#container {
+height: 90vh;
+width: 90vw;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+border: 2px solid blue;
+object-fit: contain;
+overflow: hidden;
+}
+
+.img-container img{
+max-width: 100%;
+max-height: auto;
+object-fit: contain;
+
+
+}
+
+
+
+.left-inner {
+display: flex;
+flex-wrap: wrap;
+height: 100%;
+width: 50%;
+border: solid blue;
+border-width: 0px 2px 0px 0px;
+object-fit: contain;
+
+}
+.child {
+height: 1fr;
+width: 100%;
+border-top: 2px solid blue;
+}
